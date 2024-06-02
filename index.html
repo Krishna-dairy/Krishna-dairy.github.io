@@ -16,6 +16,7 @@
 
             font-family: Arial, sans-serif;
             /* Sets a default font for the body */
+ 
         }
         button{
             box-shadow: 2px 3px 12px #3986B7;
@@ -46,6 +47,7 @@
         }
 
         .img-container img {
+margin: 10px auto;
             width: 100%;
             height: 200px;
             /* Ensures the image is responsive and fits the container */
@@ -101,6 +103,7 @@
             display: block;
             /* Makes the link fill the entire button area */
         }
+    
 
         @media (max-width: 768px) and (max-width:320px) and (min-width: 481px) {
             .gallery {
@@ -110,51 +113,175 @@
                 max-height: 100%;
             }
 
+            
+            }}
+            
+        
+            
+            
+
+           
+
+
             .img-container {
                 width: 100%;
 
                 /* Full width containers on smaller screens */
             }
 
-            /* Style for the navigation menu */
-            .topnav {
-                background-color: #333;
-                overflow: hidden;
+           
+           
+            
 
-            }
+            .navMenu{
+  /* position: relative;
+  top: 25px;
+  
+     left: 55%; */
+  
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
-            .image-container {
-                width: 100% !important;
-            }
 
-            /* Style the links inside the navigation bar */
-            .topnav a {
-                float: left;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 20px;
+.navMenu a {
+  /* position: relative;
+    
+     left: 55%; */
+     
+  color: #000000;
+  
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  /* width: 80px; */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
-            }
 
-            /* Change the color of links on hover */
-            .topnav a:hover {
-                background-color: #ddd;
-                color: black;
+ 
+.navMenu a:hover {
+  color: #fddb3a;
+}
 
-            }
+.navMenu .dot {
+    position: relative;
+   
+     left: 600px;
+     top:auto;
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
-            /* Add a color to the active/current link */
-            .topnav a.active {
-                background-color: #04AA6D;
-                color: white;
-            }
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    /* .navMenu{
+  position: relative;
+  top: 25px;
+  
+     left: 55%;}
+     .navMenu a {
+  position: relative;
+    
+     left: 55%;} */
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .navMenu{
+  position: relative;
+  top: 25px;
+  
+     left: 36%;
+  }
+  .navMenu a {
+  position: relative;
+    
+     left: 30%;}
+     .navMenu .dot {
+    position: relative;
+   
+     left: 30%;
+     }
+  }
+
+@media only screen and (min-width: 600px) {
+
+.navMenu{
+position: relative;
+top: 25px;
+
+ left: 40%;
+}
+.navMenu a {
+position: relative;
+
+ left: 45%;}
+ .navMenu .dot {
+position: relative;
+
+ left: 45%;
+ }
+}
+
+.banner{
+    /* position: relative;
+     right: -57%;
+     left: 43%; */
+     /* margin-left: 43%; */
+     img{
+        width: 100%;
+        aspect-ratio: 16/9;
+     }
+     
+}
 
             .products-cards .card-body {
-                height: 200px;
+                height: 120px;
             }
-        }
+        
 
         .o {
             color: black;
@@ -167,15 +294,13 @@
             }
         }
 
-        .p {
-            color: black;
-            font-family: serif;
-            background-color: white;
-            padding: 14px 16px;
-        }
-
+       
         .products-cards {
+background-color:#DED8B2;
             width: 33%;
+li{
+background-color:#DED8B2;
+}
         }
 
         .products-cards .card-button {
@@ -194,7 +319,7 @@
 .contactus
     {
       text-align: center;
-      paddding: 20px;
+      padding: 20px;
       font-family: Georgia;
       gap: 20px;
         max-width: 100%;
@@ -204,26 +329,33 @@
       }
       
     }
+.bg{
+  background-color: #6699CC;
+h2{
+color: black;
+            font-family: serif;
+text-align: center;
+padding: 14px 16px;
+}}
     </style>
 </head>
 
 <body>
     <!-- Navigation menu -->
-    <div class="topnav">
+   
+<nav class="navMenu">
+    <a href="https://sites.google.com/view/krishna-dairy-talalagir/home?authuser=2">Home</a>
+    <a href="https://sites.google.com/view/krishna-dairy-talalagir/contact-us?authuser=2">Contact</a>
+   
+    <!-- <a href="#">Work</a> -->
+    <a href="https://sites.google.com/view/krishna-dairy-talalagir/about-us">About</a>
+    <div class="dot"></div>
+  </nav>
 
-        <div style="text-align: center">
-            <a class="active" href="https://sites.google.com/view/krishna-dairy-talalagir/home?authuser=2">Home</a>
-            &nbsp;
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/contact-us?authuser=2">Contact</a>
-
-          &nbsp;
-             <a href="https://sites.google.com/view/krishna-dairy-talalagir/about-us">About us</a>
-        </div>
-    </div>
-
-    <div style="text-align: center" class="image-container">
-
-        <img src="https://drive.google.com/thumbnail?id=10PIA8KFYcG3HFUUFDWj5GhNb6keWZDSW" />
+    <!-- <div style="text-align: center" class="image-container"> -->
+<div class="banner">
+        <!-- <img src="https://drive.google.com/thumbnail?id=10PIA8KFYcG3HFUUFDWj5GhNb6keWZDSW" /> -->
+        <img src="https://i.ibb.co/6mCrgVD/Whats-App-Image-2024-06-02-at-12-31-33-0189e8a6.jpg" alt="Whats-App-Image-2024-06-02-at-12-31-33-0189e8a6">
 
 
     </div>
@@ -271,12 +403,11 @@
   
     &nbsp;
     &nbsp;
-    <div class="p" style="text-align: center" ;>
-        <h2>
+   
+<div class="bg">
+ <h2>
             Products
         </h2>
-    </div>
-
     <div class="container d-flex gap-1 main-product-container">
         <div class="card products-cards">
             <a href="https://sites.google.com/view/krishna-dairy-talalagir/ghee?authuser=2" class="img-container">
@@ -430,7 +561,7 @@
             </div>
         </div>
 
-        <div class="card products-cards">
+        <div class="card products-cards" hidden>
             <a href="https://sites.google.com/view/krishna-dairy-talalagir/keri"
                 class="img-container">
                 <img class="card-img-top"
@@ -463,7 +594,7 @@
       </div>
         
         <div class="in">
-          <a href="https://www.instagram.com/krishna_dairy_talalagir/">
+          <a href="https://www.instagram.com/krishna_dairy_foods_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
           <i style="font-size:24px" class="fa">&#xf16d;</i>
           <lebel style="font-size:20px">@Krishna dairy</lebel>
           </a>
@@ -475,6 +606,7 @@
           </a>
       </div>
       </div>
+</div>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RPK2BHXDBJ"></script>
 <script>
