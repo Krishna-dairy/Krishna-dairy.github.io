@@ -1,627 +1,514 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta name="keywords" content="ghee, dairy, krishna dairy talala , krishna dairy and foods">
-<meta name="author" content="ram navdariya">
-  <meta name="description" content="krishna dairy talala(gir)">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            /* Sets a default font for the body */
-
-            color: black;
-            /* White text color */
-
-            font-family: Arial, sans-serif;
-            /* Sets a default font for the body */
- 
-        }
-        button{
-            box-shadow: 2px 3px 12px #3986B7;
-        }
-        button:hover {
-          transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-
-        .gallery {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            /* Adds space below the gallery */
-            background-color: #8B8000;
-
-        }
-
-        .img-container {
-            text-align: center;
-            /* width: 33%; */
-            max-width: 100%;
-        
-            /* Each container takes up one-third of the gallery width */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            /* Adds a subtle shadow to each image container */
-            margin: 0 10px;
-            /* Adds margin between image containers */
-        }
-
-        .img-container img {
-margin: 10px auto;
-            width: 100%;
-            height: 200px;
-            /* Ensures the image is responsive and fits the container */
-            /* height: auto; */
-
-            /* aspect-ratio: 16 / 9; */
-            /* Sets a fixed aspect ratio for the images */
-            object-fit: cover;
-            /* Ensures the entire image is visible */
-            border-radius: 5px;
-            /* Rounds the corners of the images */
-            transition: transform 0.3s ease;
-            /* Smooth transition for the transform property */
-        }
-
-        .img-container img:hover {
-            transform: scale(1.05);
-            /* Scales up the image slightly on hover */
-        }
-
-        .img-container button {
-            display: block;
-            width: 50%;
-            /* Set the width of the buttons */
-            padding: 10px 20px;
-            /* Padding inside the buttons */
-            margin: 10px auto;
-            /* Centers the button below the image */
-            background-color: #007bff;
-            /* Button background color */
-
-            color: white;
-            /* Button text color */
-            border: none;
-            /* Removes the border */
-            border-radius: 5px;
-            /* Rounds the corners of the button */
-            cursor: pointer;
-            /* Changes the cursor to a pointer when hovering over the button */
-            transition: background-color 0.3s ease;
-            /* Smooth transition for the background color */
-        }
-
-        .img-container button:hover {
-            background-color: #0056b3;
-            /* Darkens the button color on hover */
-        }
-
-        .img-container button a {
-            text-decoration: none;
-            color: inherit;
-            /* Inherits the color from the button */
-            display: block;
-            /* Makes the link fill the entire button area */
-        }
-    
-
-        @media (max-width: 768px) and (max-width:320px) and (min-width: 481px) {
-            .gallery {
-                flex-direction: column;
-                /* Stacks the images vertically on smaller screens */
-                max-width: 100%;
-                max-height: 100%;
-            }
-
-            
-            }}
-            
-        
-            
-            
-
-           
-
-
-            .img-container {
-                width: 100%;
-
-                /* Full width containers on smaller screens */
-            }
-
-           
-           
-            
-
-            .navMenu{
-  /* position: relative;
-  top: 25px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishna Dairy – Pure Artisanal Dairy, Crafted with Heritage</title>
+  <meta name="description" content="From our organic farms in Talala to your table - Experience the finest traditional dairy products">
   
-     left: 55%; */
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-
-.navMenu a {
-  /* position: relative;
-    
-     left: 55%; */
-     
-  color: #000000;
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   
-  margin: 10px;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  /* width: 80px; */
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-
- 
-.navMenu a:hover {
-  color: #fddb3a;
-}
-
-.navMenu .dot {
-    position: relative;
-   
-     left: 600px;
-     top:auto;
-  width: 6px;
-  height: 6px;
-  background: #fddb3a;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(110px);
-  transform: translateX(110px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(200px);
-  transform: translateX(200px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(285px);
-  transform: translateX(285px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-@media only screen and (min-width: 768px) {
-    /* .navMenu{
-  position: relative;
-  top: 25px;
-  
-     left: 55%;}
-     .navMenu a {
-  position: relative;
-    
-     left: 55%;} */
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .navMenu{
-  position: relative;
-  top: 25px;
-  
-     left: 36%;
-  }
-  .navMenu a {
-  position: relative;
-    
-     left: 30%;}
-     .navMenu .dot {
-    position: relative;
-   
-     left: 30%;
-     }
-  }
-
-@media only screen and (min-width: 600px) {
-
-.navMenu{
-position: relative;
-top: 25px;
-
- left: 40%;
-}
-.navMenu a {
-position: relative;
-
- left: 45%;}
- .navMenu .dot {
-position: relative;
-
- left: 45%;
- }
-}
-
-.banner{
-    /* position: relative;
-     right: -57%;
-     left: 43%; */
-     /* margin-left: 43%; */
-     img{
-        width: 100%;
-        aspect-ratio: 16/9;
-     }
-     
-}
-
-            .products-cards .card-body {
-                height: 120px;
-            }
-        
-
-        .o {
-            color: black;
-            font-family: serif;
-            padding: 14px 16px;
-
-            img {
-                width: 78px;
-                padding: 14px 16px;
-            }
-        }
-
-       
-        .products-cards {
-background-color:#DED8B2;
-            width: 33%;
-li{
-background-color:#DED8B2;
-}
-        }
-
-        .products-cards .card-button {
-            margin: 10px auto;
-        }
-
-        .main-product-container {
-            margin: 10px auto;
-            /* width: max-content; */
-        }
-
-        .btn-info a {
-            color: white;
-            text-decoration: none;
-        }
-.contactus
-    {
-      text-align: center;
-      padding: 20px;
-      font-family: Georgia;
-      gap: 20px;
-        max-width: 100%;
-      h2 {
-    font-family: "Times New Roman", serif;
-      
-      }
-      
-    }
-.bg{
-  background-color: #6699CC;
-h2{
-color: black;
-            font-family: serif;
-text-align: center;
-padding: 14px 16px;
-}}
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Navigation menu -->
-   
-<nav class="navMenu">
-    <a href="https://sites.google.com/view/krishna-dairy-talalagir/home?authuser=2">Home</a>
-    <a href="https://sites.google.com/view/krishna-dairy-talalagir/contact-us?authuser=2">Contact</a>
-   
-    <!-- <a href="#">Work</a> -->
-    <a href="https://sites.google.com/view/krishna-dairy-talalagir/about-us">About</a>
-    <div class="dot"></div>
-  </nav>
+  <!-- ============== HEADER ============== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="logo">
+        <span class="logo__text">Krishna Dairy</span>
+        <span class="logo__tagline">Pure Artisanal Heritage</span>
+      </a>
+      
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="nav__menu" id="navMenu">
+        <li><a class="nav__link" href="#hero">Home</a></li>
+        <li><a class="nav__link" href="#story">Our Story</a></li>
+        <!-- <li><a class="nav__link" href="#why-choose">Why Choose Us</a></li> -->
+        <li><a class="nav__link" href="#products">Products</a></li>
+        <li><a class="nav__link" href="#gallery">Gallery</a></li>
+        <li><a class="nav__link" href="#testimonials">Reviews</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+      
+      <div class="nav__actions">
+        <a href="tel:+919316989484" class="btn btn--primary nav__cta">
+          <i class="fas fa-phone"></i>
+          Call Now
+        </a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- <div style="text-align: center" class="image-container"> -->
-<div class="banner">
-        <!-- <img src="https://drive.google.com/thumbnail?id=10PIA8KFYcG3HFUUFDWj5GhNb6keWZDSW" /> -->
-        <img src="https://i.ibb.co/6mCrgVD/Whats-App-Image-2024-06-02-at-12-31-33-0189e8a6.jpg" alt="Whats-App-Image-2024-06-02-at-12-31-33-0189e8a6">
+  <!-- ============== FLOATING CONTACT ============== -->
+  <div class="floating-contact">
+    <a href="tel:+919316989484" class="floating-contact__btn" aria-label="Call Krishna Dairy">
+      <i class="fas fa-phone"></i>
+    </a>
+    <div class="floating-contact__tooltip">Call +91 9316989484</div>
+  </div>
 
-
-    </div>
-    &nbsp;
-    &nbsp;
-
-
-
-
-    <div class="o" style="text-align: center" ;>
-
-        <h3>
-            WHY CHOOSE US ?
-        </h3>
-        <img src="https://themewagon.github.io/milky/img/product.png" width="50" hight="50" />
-        <h4>
-            Organic Products
-        </h4>
-
-        <img src="https://template98987.motopreview.com/mt-demo/98900/98987/mt-content/uploads/2020/03/mt-1990-home-icon4.png"
-            width="50" hight="50" />
-        <h4>
-            100% Organic
-        </h4>
-        <h6> Our products are free from chemicals and preservatives, ensuring natural goodness.</h6>
-
-
-        <img src="https://vrindavan.farm/images/icon-grass-s-black.png" width="50" hight="50" />
-        <h4>
-            Farm Fresh
-        </h4>
-
-        <h6> Directly from our farms to your table, we guarantee freshness.</h6>
-
-        <img src="https://img.freepik.com/free-vector/self-care-concept-with-man-activities_23-2148530061.jpg?size=338&ext=jpg"
-            width="80" hight="80" />
-        <h4>
-            Health Benefits
-        </h4>
-        <h6> Rich in Omega-3s, Vitamins A & E, our Desi Ghee promotes digestion, immunity, and skin health.</h6>
-
-
-
-    </div>
-  
-    &nbsp;
-    &nbsp;
-   
-<div class="bg">
- <h2>
-            Products
-        </h2>
-    <div class="container d-flex gap-1 main-product-container">
-        <div class="card products-cards">
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/ghee_1" class="img-container">
-                <img class="card-img-top"
-                    src="https://happybellyfish.com/wp-content/uploads/2017/01/all_about_ghee-1.jpg"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">Desi Ghee (દેશી ઘી)</h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">650₹ per kg</li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="https://sites.google.com/view/krishna-dairy-talalagir/ghee_1">Buy</a></button>
-            </div>
-        </div>
-
-        <div class="card products-cards">
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/mavo?authuser=2" class="img-container">
-                <img class="card-img-top"
-                    src="https://lh5.googleusercontent.com/YNZn1XmZpY2Kli1-G014jDw5qQh1dvXvGQCt8_82yzPwbY8XMUQJ7fTShuNmgwx9TTfp3wzKOZAd18DeaY1pa7vkTM9RFJClgiZ8nZmFWEbiTshfRfh--XlXBJXDp1aCfG17edkJayE=w16383"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">Mawo (માવો)</h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">250₹ per kg </li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="https://lh3.googleusercontent.com/y-Qtp6ZUiAy6AiNv…ixqy99KOtfswrPCsEBNSYkgwHi3W550jad8GKGIrSE=w16383">Buy</a></button>
-            </div>
-        </div>
-
-        <div class="card products-cards">
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/mango-juice?authuser=2&read_current=1"
-                class="img-container">
-                <img class="card-img-top"
-                    src="https://drive.google.com/file/d/1-aYRqsUx1pTA98wTsTCxgDfqqcfOI3gz/view?usp=sharing"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">Mango Juice (કેરી નો રસ)</h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">120₹ per kg </li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="https://lh6.googleusercontent.com/HfEI7enjV4Qfo73g…-Qk4QMyw6275PPtaTghqMRUC_uLzeI_yck60E-d83A=w16383">Buy</a></button>
-            </div>
-        </div>
-    </div>
-
-    <!-- second row start -->
-    <div class="container d-flex gap-1 main-product-container">
-        <div class="card products-cards">
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/dry-fruits-shrikhand?authuser=2" class="img-container">
-                <img class="card-img-top"
-                    src="https://drive.google.com/thumbnail?id=141NvpGsmaDbhqcLxMGadnO6oULAS6FI6"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">Dry Fruits Shrikhand</h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">260₹ per kg</li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="https://sites.google.com/view/krishna-dairy-talalagir/dry-fruits-shrikhand?authuser=2">Buy</a></button>
-            </div>
-        </div>
-
-        <div class="card products-cards">
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/kesar-shrikhand?authuser=2&read_current=1" class="img-container">
-                <img class="card-img-top"
-                    src="https://drive.google.com/thumbnail?id=1z_2M5gASKjZn4cWtAWlJJo7ozrclw5r0"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">Kesar Shrikhand</h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">200₹ per kg </li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="https://sites.google.com/view/krishna-dairy-talalagir/kesar-shrikhand?authuser=2&read_current=1">Buy</a></button>
-            </div>
-        </div>
-
-        <div class="card products-cards">
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/american-shrikhand?authuser=2"
-                class="img-container">
-                <img class="card-img-top"
-                    src="https://b.zmtcdn.com/data/dish_photos/7cc/5bfe0fe06393fa96ea71b16af034f7cc.jpg"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">American Shrikhand</h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">220₹ per kg </li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="https://sites.google.com/view/krishna-dairy-talalagir/american-shrikhand?authuser=2   ">Buy</a></button>
-            </div>
-        </div>
-    </div>
-    <!-- second row end -->
-    <!-- third row start -->
-    <div class="container d-flex gap-1 main-product-container">
-        <div class="card products-cards">
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/butter" class="img-container">
-                <img class="card-img-top"
-                    src="https://static.toiimg.com/thumb/msid-104241431,imgsize-55762,width-400,resizemode-4/104241431.jpg"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">Butter(માખણ) </h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">400₹ per kg</li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="https://sites.google.com/view/krishna-dairy-talalagir/butter">Buy</a></button>
-            </div>
-        </div>
-
-        <div class="card products-cards">
-            <a href="krishna dairy" class="img-container">
-                <img class="card-img-top"
-                    src="https://staticimg.amarujala.com/assets/images/2020/04/27/mint-lassi_1587959454.png?w=414&dpr=1.0"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">Ghoravu (ઘોરવુ) </h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">60₹ per liter </li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="k">Buy</a></button>
-            </div>
-        </div>
-
-        <div class="card products-cards" hidden>
-            <a href="https://sites.google.com/view/krishna-dairy-talalagir/keri"
-                class="img-container">
-                <img class="card-img-top"
-                    src="https://5.imimg.com/data5/PA/QK/QG/SELLER-57613071/alphonso-mango-and-kesar-mango-500x500-500x500.jpg"
-                    alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title"> Kesar Keri(કેસર કેરી) </h4>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">1350₹ 10 kg </li>
-            </ul>
-            <div class="card-button">
-                <button class="btn btn-info"><a
-                        href="https://sites.google.com/view/krishna-dairy-talalagir/keri">Buy</a></button>
-            </div>
-        </div>
-    </div>
-   <!-- third row end -->
-
+  <!-- ============== HERO SECTION ============== -->
+  <section id="hero" class="hero">
+    <div class="hero__background"></div>
+    <div class="hero__overlay"></div>
     
-<div class="contactus">
+    <!-- Organic floating shapes -->
+    <div class="organic-shapes">
+      <div class="organic-shape organic-shape--1"></div>
+      <div class="organic-shape organic-shape--2"></div>
+      <div class="organic-shape organic-shape--3"></div>
+      <div class="organic-shape organic-shape--4"></div>
+    </div>
+    
+    <div class="container hero__container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="badge__text">4th Generation Dairy Farmers</span>
+        </div>
         
-        <h2>Contact us</h2>
-        <div class="phone">
-         <a hre="tel:9316989484"> 
-<i style="font-size:24px" class="fa">&#xf095;</i>
-        <lebel style="font-size:20px">+91 9316989484</lebel>
-         </a>
-      </div>
+        <h1 class="hero__title">
+          <span class="hero__title-main">Pure Artisanal Dairy</span>
+          <span class="hero__title-sub">Crafted with Heritage</span>
+        </h1>
         
-        <div class="in">
-          <a href="https://www.instagram.com/krishna_dairy_foods_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-          <i style="font-size:24px" class="fa">&#xf16d;</i>
-          <lebel style="font-size:20px">@Krishna dairy</lebel>
+        <p class="hero__description">
+          From our organic farms in Talala to your table - Experience the finest traditional dairy products where ancient wisdom meets modern quality standards
+        </p>
+        
+        <!-- Remove the hero__stats block entirely -->
+        
+        <div class="hero__actions">
+          <a href="#products" class="btn btn--primary btn--lg hero__cta">
+            <span>Discover Our Heritage</span>
+            <i class="fas fa-arrow-right"></i>
           </a>
-      </div>
-        <div class="lo">
-          <a href="https://maps.app.goo.gl/roKXv76iA7jdzmAA6>
-          <i style="font-size:35px" class="fa">&#xf041;</i>
-          <lebel style="font-size:15px">Krishna Dairy, Aabadash Road, Gundaran, Kalidhar, Talala(gir)</lebel>
+          <a href="#story" class="btn btn--outline btn--lg hero__cta-secondary">
+            <span>Our Story</span>
           </a>
+        </div>
       </div>
+    </div>
+    
+    <div class="hero__scroll">
+      <span>Explore Below</span>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
       </div>
-</div>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RPK2BHXDBJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    </div>
+  </section>
 
-  gtag('config', 'G-RPK2BHXDBJ');
-</script>
+  <!-- ============== STORY SECTION ============== -->
+  <section id="story" class="section section--story">
+    <div class="container">
+      <div class="story__content">
+        <div class="story__text">
+          <div class="section-badge">
+            <span>Our Legacy</span>
+          </div>
+          <h2 class="section__title">A Heritage of Excellence</h2>
+          <div class="story__description">
+            <p>Krishna Dairy represents four generations of passionate dairy farming, where traditional methods meet modern excellence. Our family has been nurturing the land and caring for our cattle with the same devotion that our ancestors brought to this sacred craft.</p>
+            <p>From the fertile fields of Talala, Gujarat, we've built a legacy on the principles of organic farming, ethical animal care, and the pursuit of dairy perfection. Every drop of milk tells the story of our commitment to purity, sustainability, and the timeless art of dairy craftsmanship.</p>
+          </div>
+          
+          <div class="heritage-features">
+            <div class="heritage-feature">
+              <div class="feature-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Certified Organic</h4>
+                <p>100% chemical-free farming with natural feed and sustainable practices</p>
+              </div>
+            </div>
+            <div class="heritage-feature">
+              <div class="feature-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Family Tradition</h4>
+                <p>Four generations of expertise passed down through our family lineage</p>
+              </div>
+            </div>
+            <div class="heritage-feature">
+              <div class="feature-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Premium Quality</h4>
+                <p>Award-winning dairy products that set the standard for excellence</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="story__visual">
+          <div class="story__image-container">
+            <img src="https://1.bp.blogspot.com/-LV7_jHvd-g0/WOJa1wx0q_I/AAAAAAAAAh8/hvwCNQVVjt43rX_vPvLgQ-TXbD4g8a0VgCLcB/s1600/Gir%2BCow%2BImages%2B-%2BGir%2BGai%2Bphotos%2B-%2BGir%2BCow%2BHD%2BWallpaper%2B-%2BGIR%2BGAI%2Bpics.jpg" alt="Highland cows in golden hour pasture" class="story__image">
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <span class="overlay-text">Pure Heritage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ============== WHY CHOOSE US ============== -->
+  <section id="why-choose" class="section section--why">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span>Premium Excellence</span>
+        </div>
+        <h2 class="section__title">Why Choose Krishna Dairy?</h2>
+        <p class="section__description">Discover what makes our artisanal dairy products exceptional and why discerning families trust us for their daily nutrition</p>
+      </div>
+      
+      <div class="why-grid" id="whyGrid">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
 
+  <!-- ============== PRODUCTS SHOWCASE ============== -->
+  <section id="products" class="section section--products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span>Artisanal Collection</span>
+        </div>
+        <h2 class="section__title">Our Premium Products</h2>
+        <p class="section__description">Handcrafted dairy excellence using traditional methods and the finest organic ingredients</p>
+      </div>
+      
+      <div class="products-grid" id="productsGrid">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
 
+  <!-- ============== GALLERY ============== -->
+  <section id="gallery" class="section section--gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span>Behind the Scenes</span>
+        </div>
+        <h2 class="section__title">Our Farm Life</h2>
+        <p class="section__description">Take a glimpse into our organic farming practices and traditional dairy production process</p>
+      </div>
+      
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TESTIMONIALS ============== -->
+  <section id="testimonials" class="section section--testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span>Customer Stories</span>
+        </div>
+        <h2 class="section__title">What Our Families Say</h2>
+        <p class="section__description">Hear from the families who have made Krishna Dairy a part of their daily lives</p>
+      </div>
+      
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SUSTAINABILITY ============== -->
+  <section id="sustainability" class="section section--sustainability">
+    <div class="container">
+      <div class="sustainability__content">
+        <div class="sustainability__text">
+          <div class="section-badge">
+            <span>Our Commitment</span>
+          </div>
+          <h2 class="section__title">Sustainable Excellence</h2>
+          <p class="sustainability__description">
+            At Krishna Dairy, we believe that caring for our earth is as important as caring for our customers. Our commitment to sustainability runs deep through every aspect of our operations.
+          </p>
+          
+          <div class="sustainability-features">
+            <div class="sustainability-feature">
+              <i class="fas fa-leaf"></i>
+              <div>
+                <h4>Eco-Friendly Farming</h4>
+                <p>Zero-chemical farming methods that nurture soil health and biodiversity</p>
+              </div>
+            </div>
+            <div class="sustainability-feature">
+              <i class="fas fa-recycle"></i>
+              <div>
+                <h4>Sustainable Packaging</h4>
+                <p>Environmentally conscious packaging solutions that reduce our carbon footprint</p>
+              </div>
+            </div>
+            <div class="sustainability-feature">
+              <i class="fas fa-water"></i>
+              <div>
+                <h4>Water Conservation</h4>
+                <p>Innovative water management systems that preserve this precious resource</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sustainability__visual">
+          <div class="sustainability-stats">
+            <div class="stat-card">
+              <span class="stat-number">0%</span>
+              <span class="stat-label">Chemical Free</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">50%</span>
+              <span class="stat-label">Water Savings</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Renewable Energy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section id="contact" class="section section--contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span>Get In Touch</span>
+        </div>
+        <h2 class="section__title">Connect With Us</h2>
+        <p class="section__description">Ready to experience the finest artisanal dairy products? Let's start your journey to premium nutrition</p>
+      </div>
+      
+      <div class="contact__wrapper">
+        <div class="contact__info">
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Visit Our Farm</h4>
+                <p>Krishna Dairy, Aabadash Road<br>Gundaran, Kalidhar, Talala(gir)<br>Gujarat, India</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Call Us Today</h4>
+                <p><a href="tel:+919316989484" class="contact-link">+91 9316989484</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Farm Hours</h4>
+                <p>Monday - Saturday: 6:00 AM - 8:00 PM<br>Sunday: 7:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-connect">
+            <h4>Follow Our Journey</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="social-link" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/919316989484" class="social-link" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="#" class="social-link" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact__form" id="contactForm">
+          <h3>Send Us a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName" class="form-label">First Name *</label>
+              <input type="text" id="firstName" name="firstName" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="form-label">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" class="form-control" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <select id="subject" name="subject" class="form-control">
+              <option value="">Select a topic</option>
+              <option value="products">Product Inquiry</option>
+              <option value="wholesale">Wholesale Orders</option>
+              <option value="farm-visit">Farm Visit</option>
+              <option value="partnership">Partnership</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Message *</label>
+            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Tell us about your dairy needs..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn--primary btn--full-width">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+      
+      <!-- Map Section -->
+      <!-- <div class="map-section">
+        <div class="map-container">
+          <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <h4>Find Our Farm</h4>
+            <p>Krishna Dairy, Talala, Gujarat</p>
+            <a href="https://maps.google.com/?q=Krishna+Dairy+Aabadash+Road+Gundaran+Kalidhar+Talala+Gujarat" target="_blank" class="btn btn--outline">
+              <i class="fas fa-directions"></i>
+              Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section footer__brand">
+          <div class="footer__logo">
+            <span class="logo__text">Krishna Dairy</span>
+            <span class="logo__tagline">Pure Artisanal Heritage</span>
+          </div>
+          <p class="footer__description">
+            Bringing you the finest organic dairy products with traditional values and modern quality standards since four generations. Experience the taste of authentic Gujarat heritage.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="footer__social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919316989484" class="footer__social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="footer__social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#why-choose">Why Choose Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__section">
+          <h4 class="footer__title">Our Products</h4>
+          <ul class="footer__links">
+            <li><a href="#products">Desi Ghee</a></li>
+            <li><a href="#products">Mawo</a></li>
+            <li><a href="#products">Shrikhand Varieties</a></li>
+            <li><a href="#products">Fresh Butter</a></li>
+            <li><a href="#products">Ghoravu</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__section">
+          <h4 class="footer__title">Contact Info</h4>
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Aabadash Road, Gundaran, Kalidhar, Talala(gir), Gujarat</span>
+            </div>
+            <div class="footer__contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919316989484">+91 9316989484</a>
+            </div>
+            <div class="footer__contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@krishnadairy.com">info@krishnadairy.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <div class="footer__bottom-content">
+          <p>&copy; <span id="currentYear"></span> Krishna Dairy. All rights reserved.</p>
+          <p class="footer__tagline">Made with ❤️ in Gujarat, India</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============== LIGHTBOX MODAL ============== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__overlay"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="" alt="" class="lightbox__image" id="lightboxImage">
+      <!-- Removed .lightbox__info block -->
+    </div>
+  </div>
+
+  <!-- ============== NEWSLETTER POPUP ============== -->
+  <div class="newsletter-popup" id="newsletterPopup">
+    <div class="newsletter-popup__overlay"></div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
-
 </html>
