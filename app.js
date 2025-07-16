@@ -319,6 +319,81 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var galleryGrid = document.querySelector('.gallery-grid');
+  function updateGalleryAutoScroll() {
+    if (window.innerWidth <= 480) {
+      galleryGrid && galleryGrid.classList.add('auto-scroll');
+    } else {
+      galleryGrid && galleryGrid.classList.remove('auto-scroll');
+    }
+  }
+  updateGalleryAutoScroll();
+  window.addEventListener('resize', updateGalleryAutoScroll);
+});
+
+// Gallery dot navigation for mobile
+function setupGalleryDots() {
+  const grid = document.getElementById('galleryGrid');
+  const dotsContainer = document.getElementById('galleryDots');
+  if (!grid || !dotsContainer) return;
+  const items = grid.querySelectorAll('.gallery-item');
+  dotsContainer.innerHTML = '';
+  items.forEach((item, idx) => {
+    const dot = document.createElement('button');
+    dot.className = 'gallery-dot';
+    dot.setAttribute('aria-label', `Go to image ${idx + 1}`);
+    dot.addEventListener('click', () => {
+      item.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+    });
+    dotsContainer.appendChild(dot);
+  });
+  function updateActiveDot() {
+    const scrollLeft = grid.scrollLeft;
+    const itemWidth = items[0]?.offsetWidth || 1;
+    const idx = Math.round(scrollLeft / itemWidth);
+    dotsContainer.querySelectorAll('.gallery-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === idx);
+    });
+  }
+  grid.addEventListener('scroll', updateActiveDot);
+  updateActiveDot();
+}
+document.addEventListener('DOMContentLoaded', function() {
+  setupGalleryDots();
+});
+
+// Testimonials dot navigation for mobile
+function setupTestimonialsDots() {
+  const grid = document.getElementById('testimonialsGrid');
+  const dotsContainer = document.getElementById('testimonialsDots');
+  if (!grid || !dotsContainer) return;
+  const items = grid.querySelectorAll('.testimonial-card');
+  dotsContainer.innerHTML = '';
+  items.forEach((item, idx) => {
+    const dot = document.createElement('button');
+    dot.className = 'testimonials-dot';
+    dot.setAttribute('aria-label', `Go to testimonial ${idx + 1}`);
+    dot.addEventListener('click', () => {
+      item.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+    });
+    dotsContainer.appendChild(dot);
+  });
+  function updateActiveDot() {
+    const scrollLeft = grid.scrollLeft;
+    const itemWidth = items[0]?.offsetWidth || 1;
+    const idx = Math.round(scrollLeft / itemWidth);
+    dotsContainer.querySelectorAll('.testimonials-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === idx);
+    });
+  }
+  grid.addEventListener('scroll', updateActiveDot);
+  updateActiveDot();
+}
+document.addEventListener('DOMContentLoaded', function() {
+  setupTestimonialsDots();
+});
+
 // Mobile Navigation
 function toggleMobileMenu() {
   appState.isMenuOpen = !appState.isMenuOpen;
@@ -368,12 +443,12 @@ function handleScroll() {
   const scrollY = window.pageYOffset;
   appState.scrollPosition = scrollY;
   
-  // Header scroll effect
-  if (scrollY > 100) {
-    elements.header.classList.add('scrolled');
-  } else {
-    elements.header.classList.remove('scrolled');
-  }
+  // Header scroll effect (disabled)
+  // if (scrollY > 100) {
+  //   elements.header.classList.add('scrolled');
+  // } else {
+  //   elements.header.classList.remove('scrolled');
+  // }
   
   // Update active navigation
   updateActiveNavigationOnScroll();
@@ -471,15 +546,15 @@ function populateProducts() {
     }
     card.innerHTML = `
       <a href="${productLink}" class="product-card__link" target="_blank">
-        <img src="${product.image}" alt="${product.name}" class="product-card__image" 
-             onerror="this.src='https://images.unsplash.com/photo-1628088062854-d1870b4553da?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
-        <div class="product-card__content">
-          <h3 class="product-card__name">${product.name}</h3>
-          <p class="product-card__name-gujarati">${product.nameGujarati}</p>
-          <p class="product-card__price">${product.price} ${product.unit}</p>
-          <p class="product-card__description">${product.description}</p>
-          <div class="product-card__benefits">${benefitsHtml}</div>
-        </div>
+      <img src="${product.image}" alt="${product.name}" class="product-card__image" 
+           onerror="this.src='https://images.unsplash.com/photo-1628088062854-d1870b4553da?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+      <div class="product-card__content">
+        <h3 class="product-card__name">${product.name}</h3>
+        <p class="product-card__name-gujarati">${product.nameGujarati}</p>
+        <p class="product-card__price">${product.price} ${product.unit}</p>
+        <p class="product-card__description">${product.description}</p>
+        <div class="product-card__benefits">${benefitsHtml}</div>
+      </div>
       </a>
     `;
     
