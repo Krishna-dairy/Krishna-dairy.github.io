@@ -13,33 +13,88 @@ const krishnaData = {
   },
   products: [
     {
+      name: "A2 Gir Cow Ghee",
+      slug: "a2-gir-cow-ghee",
+      nameGujarati: "A2 ગીર ગાય ઘી",
+      price: "₹2380",
+      numericPrice: 2380,
+      unit: "per kg",
+      badge: "Vedic Bilona",
+      description: "Traditional Vedic bilona ghee crafted from pure A2 Gir cow milk, known for unmatched purity, aroma, and wellness benefits.",
+      longDescription: "Our flagship A2 Gir Cow Ghee is made using the sacred ancient Bilona method in earthen and brass vessels. Milk from naturally grazing Gir cows in Talala is boiled, set into curd, hand-churned before sunrise with a wooden bilona to obtain makkhan, and slow-simmered over gentle flame. The result is pure golden granular ghee with unmatched medicinal properties and heavenly aroma.",
+      benefits: ["100% Vedic Bilona Churned", "Pure Gir Cow A2 Beta-Casein", "Boosts Immunity & Metabolism", "Enhances Memory & Digestion", "Rich in Omega-3, 6 & Vitamins A, D, E, K"],
+      ingredients: ["100% Pure A2 Gir Cow Whole Milk", "Natural Curd Culture"],
+      nutrition: { energy: "898 kcal", fat: "99.8g", saturatedFat: "64g", protein: "0g", carbs: "0g", cholesterol: "180mg" },
+      storage: "Store in a cool, dry place away from direct sunlight. Do not refrigerate. Use a clean, dry spoon.",
+      shelfLife: "12 months from packing date",
+      image: "img/pure-desi-ghee.webp"
+    },
+    {
       name: "Desi Ghee",
       slug: "desi-ghee",
       nameGujarati: "દેશી ઘી",
-      price: "₹650",
+      price: "₹1350",
+      numericPrice: 1350,
       unit: "per kg",
-      description: "Golden treasure from grass-fed cows, rich in nutrients and traditional flavor",
-      benefits: ["Pure A2 milk", "Rich in Omega-3", "Aids digestion", "Boosts immunity"],
+      badge: "Traditional Pure",
+      description: "Golden treasure from grass-fed cows, rich in nutrients and authentic traditional flavor.",
+      longDescription: "Krishna Dairy Desi Ghee is crafted following time-tested Gujarat farm traditions. Prepared from fresh, wholesome farm milk, it offers a deep golden granular texture and rich nutty aroma that enhances every traditional meal and sweet.",
+      benefits: ["Pure Grass-Fed Cow Milk", "Rich in Natural Antioxidants", "Supports Gut Health & Digestion", "Strengthens Bones & Joints", "Ideal for Daily Cooking & Pooja"],
+      ingredients: ["100% Pure Cow Milk Fat"],
+      nutrition: { energy: "895 kcal", fat: "99.5g", saturatedFat: "62g", protein: "0g", carbs: "0g", cholesterol: "190mg" },
+      storage: "Store at room temperature in an airtight jar. Keep away from moisture.",
+      shelfLife: "9 months from packing date",
       image: "https://happybellyfish.com/wp-content/uploads/2017/01/all_about_ghee-1.jpg"
     },
     {
-      name: "Mawo",
-      slug: "mawo",
-      nameGujarati: "માવો",
-      price: "₹250",
+      name: "Smooth Khoya (Mawa)",
+      slug: "smooth-khoya-mawa",
+      nameGujarati: "સુંવાળો માવો / ખોયા",
+      price: "₹350",
+      numericPrice: 350,
       unit: "per kg",
-      description: "Artisanal milk solids, naturally sweetened and traditionally prepared",
-      benefits: ["High protein", "Natural sweetness", "Traditional recipe", "Pure milk"],
-      image: "https://lh3.googleusercontent.com/d/1zdVAlhXpFn7aFXr0QbnfXjY78GJADA9d"
+      badge: "Velvety Smooth",
+      description: "Ultra-smooth, rich creamy milk solids crafted specially for melt-in-the-mouth Gulab Jamun, Barfi, and delicate desserts.",
+      longDescription: "Krishna Dairy Smooth Khoya is gently slow-simmered and finely kneaded to achieve a velvety, silky smooth texture with no granules. Specially crafted for royal Indian sweets like soft gulab jamuns, chocolate barfi, rasgulla fillings, and creamy gravies. Prepared from 100% pure organic milk with zero additives or starch.",
+      benefits: ["Velvety Smooth & Non-Granular", "Ideal for Gulab Jamun & Sweets", "100% Pure Farm Milk Solids", "Rich Creamy Dairy Aroma", "Zero Starch, Zero Preservatives"],
+      ingredients: ["100% Pure Full-Cream Milk Solids"],
+      nutrition: { energy: "380 kcal", fat: "24g", saturatedFat: "14g", protein: "12g", carbs: "28g", calcium: "680mg" },
+      storage: "Refrigerate at 2°C - 5°C. Keep tightly covered.",
+      shelfLife: "7 days refrigerated, 30 days frozen",
+      image: "https://lh3.googleusercontent.com/d/1zohAY-Z_L-08uKLl4twRJDwc7SWnMUzz"
+    },
+    {
+      name: "Traditional Mawa",
+      slug: "traditional-mawa",
+      nameGujarati: "દેશી રવાદાર માવો (ખોયા)",
+      price: "₹250",
+      numericPrice: 250,
+      unit: "per kg",
+      badge: "Granular Desi",
+      description: "Classic Gujarati granular milk solids, slow-reduced in traditional iron kadhais for authentic peda, barfi, and halwa.",
+      longDescription: "Our Traditional Mawa (Khoya) is prepared the authentic Gujarati way—slowly reducing 100% pure full-cream milk in wide iron pans over steady heat until it forms dense, fragrant, granular milk solids. Its natural texture and deep dairy flavor make it the indispensable soul of classic Gujarati and Kathiyawadi festivals, peda, mohanthal, and seasonal halwas.",
+      benefits: ["Authentic Granular (Danedar) Texture", "Traditional Iron Kadhai Simmered", "Rich in Calcium & Milk Protein", "Pure Fresh Milk, Zero Preservatives", "Perfect for Peda, Halwa & Barfi"],
+      ingredients: ["100% Pure Full-Cream Cow & Buffalo Milk"],
+      nutrition: { energy: "350 kcal", fat: "20g", saturatedFat: "12g", protein: "10g", carbs: "30g", calcium: "650mg" },
+      storage: "Refrigerate at 2°C - 5°C. Consume within 7 days.",
+      shelfLife: "7 days refrigerated",
+      image: "img/mawo.jpg"
     },
     {
       name: "Mango Juice",
       slug: "mango-juice",
       nameGujarati: "કેરી નો રસ",
       price: "₹120",
+      numericPrice: 120,
       unit: "per kg",
-      description: "Fresh seasonal mangoes, farm-pressed with no artificial additives",
-      benefits: ["Seasonal fruit", "No preservatives", "Fresh daily", "Natural vitamins"],
+      badge: "Talala Kesar",
+      description: "Fresh seasonal mangoes, farm-pressed with no artificial additives.",
+      longDescription: "Pressed directly from world-famous GI-tagged Talala Gir Kesar mangoes grown in our local orchards. Pure, pulpy, fragrant, and bursting with natural sweetness. No added water, preservatives, or artificial food colors.",
+      benefits: ["Made from 100% Talala Gir Kesar Mangoes", "Rich in Vitamin C & Vitamin A", "Zero Preservatives & Zero Artificial Sugar", "Freshly Extracted & Chilled", "Authentic Gujarat Summer Heritage"],
+      ingredients: ["100% Pure Talala Gir Kesar Mango Pulp"],
+      nutrition: { energy: "70 kcal", fat: "0.2g", protein: "0.8g", carbs: "17g", vitaminC: "36mg" },
+      storage: "Keep frozen or deeply chilled below 4°C. Consume chilled.",
+      shelfLife: "15 days frozen",
       image: "https://lh3.googleusercontent.com/d/1-ahnoC_P2-0piqZt3SM16lnqEyuVApMc"
     },
     {
@@ -47,9 +102,16 @@ const krishnaData = {
       slug: "dry-fruits-shrikhand",
       nameGujarati: "ડ્રાય ફ્રૂટ્સ શ્રીખંડ",
       price: "₹260",
+      numericPrice: 260,
       unit: "per kg",
-      description: "Traditional dessert with premium nuts and rich, creamy texture",
-      benefits: ["Premium nuts", "Rich in calcium", "Traditional sweet", "Artisanal craft"],
+      badge: "Royal Treat",
+      description: "Traditional dessert with premium nuts and rich, creamy texture.",
+      longDescription: "Prepared from dense hung curd (chakka) infused with premium almonds, cashews, pistachios, and aromatic cardamom. Thick, luxurious, and slow-blended to create the quintessential Gujarati celebration dessert.",
+      benefits: ["Rich in Calcium & Probiotics", "Generously Loaded with Almonds, Cashews & Pistachios", "Smooth, Silky Gourmet Texture", "Natural Elaichi Aroma", "Pure Artisanal Craft"],
+      ingredients: ["Strained Whole Milk Curd (Chakka)", "Sugar", "Almonds", "Cashews", "Pistachios", "Cardamom"],
+      nutrition: { energy: "260 kcal", fat: "8g", protein: "6g", carbs: "42g", calcium: "180mg" },
+      storage: "Store refrigerated at 2°C - 4°C. Serve chilled.",
+      shelfLife: "14 days refrigerated",
       image: "https://drive.google.com/thumbnail?id=141NvpGsmaDbhqcLxMGadnO6oULAS6FI6"
     },
     {
@@ -57,9 +119,16 @@ const krishnaData = {
       slug: "kesar-shrikhand",
       nameGujarati: "કેસર શ્રીખંડ",
       price: "₹200",
+      numericPrice: 200,
       unit: "per kg",
-      description: "Saffron-infused creamy delight, a royal treat for special occasions",
-      benefits: ["Pure saffron", "Royal flavor", "Rich texture", "Premium quality"],
+      badge: "Pure Saffron",
+      description: "Saffron-infused creamy delight, a royal treat for special occasions.",
+      longDescription: "Our Kesar Shrikhand blends velvety hung curd with pure Kashmiri saffron strands and ground green cardamom. Every spoonful delivers a royal golden hue, delicate floral fragrance, and melt-in-the-mouth texture.",
+      benefits: ["Infused with Pure Saffron (Kesar)", "High in Calcium & Live Probiotics", "Authentic Royal Recipe", "No Artificial Food Colors", "Rich & Creamy Consistency"],
+      ingredients: ["Strained Milk Curd (Chakka)", "Sugar", "Pure Saffron (Kesar)", "Cardamom"],
+      nutrition: { energy: "250 kcal", fat: "7.5g", protein: "6g", carbs: "40g", calcium: "175mg" },
+      storage: "Keep refrigerated below 4°C. Serve chilled.",
+      shelfLife: "14 days refrigerated",
       image: "https://drive.google.com/thumbnail?id=1z_2M5gASKjZn4cWtAWlJJo7ozrclw5r0"
     },
     {
@@ -67,29 +136,50 @@ const krishnaData = {
       slug: "american-shrikhand",
       nameGujarati: "અમેરિકન શ્રીખંડ",
       price: "₹220",
+      numericPrice: 220,
       unit: "per kg",
-      description: "Fusion flavors meeting traditional craft, best of both worlds",
-      benefits: ["Fusion taste", "Traditional method", "Unique flavor", "Modern twist"],
+      badge: "Modern Fusion",
+      description: "Fusion flavors meeting traditional craft, best of both worlds.",
+      longDescription: "A playful fusion favorite combining traditional Gujarati hung curd with candied fruits, chocolate chips, crunchy nuts, and subtle fruit essence. A beloved celebration dessert that delights all age groups.",
+      benefits: ["Fusion of Traditional Chakka & Tutti-Frutti/Nuts", "Rich Creamy Dairy Base", "Unique Sweet & Fruity Flavor Profile", "Favorite for Parties & Family Feasts"],
+      ingredients: ["Strained Milk Curd (Chakka)", "Sugar", "Mixed Candied Fruits", "Assorted Nuts", "Natural Flavors"],
+      nutrition: { energy: "265 kcal", fat: "8g", protein: "5.5g", carbs: "44g", calcium: "170mg" },
+      storage: "Keep refrigerated below 4°C. Serve chilled.",
+      shelfLife: "14 days refrigerated",
       image: "https://b.zmtcdn.com/data/dish_photos/7cc/5bfe0fe06393fa96ea71b16af034f7cc.jpg"
     },
     {
       name: "Butter",
       slug: "butter",
-      nameGujarati: "માખણ",
+      nameGujarati: "માખણ (સફેદ માખણ)",
       price: "₹400",
+      numericPrice: 400,
       unit: "per kg",
-      description: "Churned fresh daily, pure and natural with exceptional taste",
-      benefits: ["Fresh daily", "Pure cream", "Natural taste", "Rich vitamins"],
+      badge: "Farm Churned",
+      description: "Churned fresh daily, pure and natural with exceptional taste.",
+      longDescription: "Pure white cultured butter (Safed Makkhan) churned fresh daily from ripened whole milk cream. Unsalted, silky, and naturally rich in healthy fat-soluble vitamins. The authentic taste of grandma's kitchen.",
+      benefits: ["Churned Daily from Fresh Farm Cream", "100% Unsalted & Pure White", "Zero Artificial Colors or Salt", "Rich in Conjugated Linoleic Acid (CLA)", "Delicious with Parathas, Theplas & Khakhra"],
+      ingredients: ["100% Pure Churned Farm Cream"],
+      nutrition: { energy: "717 kcal", fat: "81g", saturatedFat: "51g", protein: "0.8g", carbs: "0.6g", vitaminA: "680mcg" },
+      storage: "Keep refrigerated below 4°C. Consume within 10 days or freeze for up to 60 days.",
+      shelfLife: "10 days refrigerated",
       image: "https://static.toiimg.com/thumb/msid-104241431,imgsize-55762,width-400,resizemode-4/104241431.jpg"
     },
     {
       name: "Ghoravu",
       slug: "ghoravu",
-      nameGujarati: "ઘોરવુ",
+      nameGujarati: "ઘોરવુ (છાસ / લસ્સી)",
       price: "₹60",
+      numericPrice: 60,
       unit: "per liter",
-      description: "Traditional fermented milk beverage, healthy and refreshing",
-      benefits: ["Probiotic rich", "Digestive health", "Traditional recipe", "Refreshing taste"],
+      badge: "Probiotic Healthy",
+      description: "Traditional fermented milk beverage, healthy and refreshing.",
+      longDescription: "An authentic rural Saurashtra specialty prepared from churned fermented curd infused with roasted cumin, rock salt, and fresh herbs. Light, soothing, and packed with gut-healthy live probiotics for daily digestion.",
+      benefits: ["Natural Digestive Drink", "Packed with Gut-Healthy Active Probiotics", "Hydrating & Cooling for Saurashtra Summers", "Low Calorie & Low Fat", "Traditional Village Recipe"],
+      ingredients: ["Fermented Cow Milk Curd", "Water", "Roasted Cumin", "Rock Salt", "Mint"],
+      nutrition: { energy: "32 kcal", fat: "1g", protein: "1.8g", carbs: "3.5g", sodium: "120mg" },
+      storage: "Keep refrigerated below 4°C. Shake well before drinking.",
+      shelfLife: "3 days refrigerated",
       image: "https://staticimg.amarujala.com/assets/images/2020/04/27/mint-lassi_1587959454.png?w=414&dpr=1.0"
     }
   ],
@@ -188,7 +278,7 @@ const appState = {
   isLightboxOpen: false,
   newsletterShown: false,
   scrollPosition: 0,
-  isMobile: window.innerWidth <= 768
+  isMobile: window.innerWidth <= 1024
 };
 
 // DOM Elements Cache
@@ -319,18 +409,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var galleryGrid = document.querySelector('.gallery-grid');
-  function updateGalleryAutoScroll() {
-    if (window.innerWidth <= 480) {
-      galleryGrid && galleryGrid.classList.add('auto-scroll');
-    } else {
-      galleryGrid && galleryGrid.classList.remove('auto-scroll');
-    }
-  }
-  updateGalleryAutoScroll();
-  window.addEventListener('resize', updateGalleryAutoScroll);
-});
+// Gallery auto-scroll disabled for smooth native touch swiping
+
 
 // Gallery dot navigation for mobile
 function setupGalleryDots() {
@@ -464,7 +544,7 @@ function handleScroll() {
 
 // Resize Handler
 function handleResize() {
-  appState.isMobile = window.innerWidth <= 768;
+  appState.isMobile = window.innerWidth <= 1024;
   
   if (!appState.isMobile && appState.isMenuOpen) {
     closeMobileMenu();
@@ -487,8 +567,8 @@ function populateWhyChooseUs() {
   
   krishnaData.whyChooseUs.forEach((item, index) => {
     const card = document.createElement('div');
-    card.className = 'why-card animate-on-scroll';
-    card.style.animationDelay = `${index * 0.1}s`;
+    card.className = `why-card animate-on-scroll delay-${(index % 4) + 1}`;
+    card.style.transitionDelay = `${(index % 4) * 0.08}s`;
     
     let iconHtml = '';
     if (typeof item.icon === 'string' && /\.(png|jpe?g|webp)$/i.test(item.icon)) {
@@ -515,75 +595,107 @@ function populateProducts() {
   
   krishnaData.products.forEach((product, index) => {
     const card = document.createElement('div');
-    card.className = 'product-card animate-on-scroll';
-    card.style.animationDelay = `${index * 0.1}s`;
+    card.className = `product-card animate-on-scroll delay-${(index % 4) + 1}`;
+    card.style.transitionDelay = `${(index % 4) * 0.08}s`;
     
     const benefitsHtml = product.benefits.map(benefit => 
       `<span class="benefit-tag">${benefit}</span>`
     ).join('');
     
-    let productLink = '';
-    if (product.slug === 'desi-ghee') {
-      productLink = 'https://sites.google.com/view/krishna-dairy-talalagir/ghee_1';
-    } else if (product.slug === 'mawo') {
-      productLink = 'https://sites.google.com/view/krishna-dairy-talalagir/mavo?authuser=2';
-    } else if (product.slug === 'mango-juice') {
-      productLink = 'https://sites.google.com/view/krishna-dairy-talalagir/mango-juice?authuser=2';
-    } else if (product.slug === 'dry-fruits-shrikhand') {
-      productLink = 'https://sites.google.com/view/krishna-dairy-talalagir/dry-fruits-shrikhand?authuser=2';
-    } else if (product.slug === 'kesar-shrikhand') {
-      productLink = 'https://sites.google.com/view/krishna-dairy-talalagir/kesar-shrikhand?authuser=2';
-    } else if (product.slug === 'american-shrikhand') {
-      productLink = 'https://sites.google.com/view/krishna-dairy-talalagir/american-shrikhand?authuser=2';
-    }
-    else if (product.slug === 'butter') {
-      productLink = 'https://sites.google.com/view/krishna-dairy-talalagir/butter';
-    } 
-    else if (product.slug === 'ghoravu') {
-      productLink = 'https://sites.google.com/view/krishna-dairy-talalagir/american-shrikhand?authuser=2';
-    }else {
-      productLink = 'product.html?slug=' + product.slug;
-    }
+    const productLink = 'product.html?slug=' + product.slug;
+    const waText = encodeURIComponent(
+      `Hello Krishna Dairy! 🥛\nI would like to order:\n• Product: ${product.name} (${product.nameGujarati})\n• Price: ${product.price} ${product.unit}\n\nPlease confirm my order and share delivery details to my address.`
+    );
+    const waLink = `https://wa.me/919316989484?text=${waText}`;
+
     card.innerHTML = `
-      <a href="${productLink}" class="product-card__link" target="_blank">
-      <img src="${product.image}" alt="${product.name}" class="product-card__image" 
-           onerror="this.src='https://images.unsplash.com/photo-1628088062854-d1870b4553da?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+      <div class="product-card__img-container">
+        <a href="${productLink}">
+          <img src="${product.image}" alt="${product.name}" class="product-card__image" 
+               onerror="this.src='https://images.unsplash.com/photo-1628088062854-d1870b4553da?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+        </a>
+        <span class="product-card__badge">${product.badge || 'Fresh & Pure'}</span>
+      </div>
       <div class="product-card__content">
-        <h3 class="product-card__name">${product.name}</h3>
-        <p class="product-card__name-gujarati">${product.nameGujarati}</p>
-        <p class="product-card__price">${product.price} ${product.unit}</p>
+        <a href="${productLink}" class="product-card__title-link">
+          <h3 class="product-card__name">${product.name}</h3>
+          <p class="product-card__name-gujarati">${product.nameGujarati}</p>
+        </a>
+        <div class="product-card__price-tag">${product.price} <span class="product-card__unit">${product.unit}</span></div>
         <p class="product-card__description">${product.description}</p>
         <div class="product-card__benefits">${benefitsHtml}</div>
+        <div class="product-card__actions">
+          <a href="${waLink}" target="_blank" rel="noopener" class="product-card__btn-wa" aria-label="Order ${product.name} on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>Order on WhatsApp</span>
+          </a>
+          <a href="${productLink}" class="product-card__btn-details">
+            <span>View Details</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
-      </a>
     `;
-    
-    // Add hover effects
-    card.addEventListener('mouseenter', () => {
-      card.style.transform = 'translateY(-16px) scale(1.02)';
-    });
-    
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = 'translateY(0) scale(1)';
-    });
     
     elements.productsGrid.appendChild(card);
   });
 }
 
 // Populate Gallery Section
+let isGalleryPaused = false;
+let galleryScrollSpeed = 0.9;
+let galleryRAF = null;
+
+function initGalleryAutoScroll() {
+  const grid = elements.galleryGrid;
+  if (!grid) return;
+
+  function step() {
+    if (!isGalleryPaused) {
+      grid.scrollLeft += galleryScrollSpeed;
+      // Seamless wrap-around when reaching midpoint
+      if (grid.scrollLeft >= grid.scrollWidth / 2) {
+        grid.scrollLeft = 0;
+      }
+    }
+    galleryRAF = requestAnimationFrame(step);
+  }
+
+  if (galleryRAF) cancelAnimationFrame(galleryRAF);
+  galleryRAF = requestAnimationFrame(step);
+
+  // Pause on mouse hover (desktop)
+  grid.addEventListener('mouseenter', () => { isGalleryPaused = true; });
+  grid.addEventListener('mouseleave', () => { isGalleryPaused = false; });
+
+  // Pause on touch and resume after release (mobile)
+  let touchTimer = null;
+  grid.addEventListener('touchstart', () => {
+    isGalleryPaused = true;
+    if (touchTimer) clearTimeout(touchTimer);
+  }, { passive: true });
+
+  grid.addEventListener('touchend', () => {
+    touchTimer = setTimeout(() => {
+      isGalleryPaused = false;
+    }, 1800);
+  }, { passive: true });
+}
+
 function populateGallery() {
   if (!elements.galleryGrid) return;
   
   elements.galleryGrid.innerHTML = '';
   
-  krishnaData.galleryItems.forEach((item, index) => {
+  // Clone gallery items once for infinite seamless scrolling
+  const itemsToRender = [...krishnaData.galleryItems, ...krishnaData.galleryItems];
+  
+  itemsToRender.forEach((item, index) => {
     const galleryItem = document.createElement('div');
-    galleryItem.className = 'gallery-item animate-on-scroll';
-    galleryItem.style.animationDelay = `${index * 0.1}s`;
+    galleryItem.className = 'gallery-item';
     
     galleryItem.innerHTML = `
-      <img src="${item.image}" alt="${item.title}" class="gallery-item__image"
+      <img src="${item.image}" alt="${item.title}" class="gallery-item__image" 
            onerror="this.src='https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
       <div class="gallery-item__overlay"></div>
     `;
@@ -595,6 +707,8 @@ function populateGallery() {
     
     elements.galleryGrid.appendChild(galleryItem);
   });
+
+  initGalleryAutoScroll();
 }
 
 // Populate Testimonials Section
@@ -605,8 +719,8 @@ function populateTestimonials() {
   
   krishnaData.testimonials.forEach((testimonial, index) => {
     const card = document.createElement('div');
-    card.className = 'testimonial-card animate-on-scroll';
-    card.style.animationDelay = `${index * 0.1}s`;
+    card.className = `testimonial-card animate-on-scroll delay-${(index % 3) + 1}`;
+    card.style.transitionDelay = `${(index % 3) * 0.08}s`;
     
     const starsHtml = Array(testimonial.rating).fill().map(() => 
       '<i class="fas fa-star star"></i>'
@@ -634,9 +748,9 @@ function populateTestimonials() {
 function openLightbox(imageSrc, title, description) {
   if (!elements.lightbox) return;
   
-  elements.lightboxImage.src = imageSrc;
-  elements.lightboxTitle.textContent = title;
-  elements.lightboxDescription.textContent = description;
+  if (elements.lightboxImage) elements.lightboxImage.src = imageSrc;
+  if (elements.lightboxTitle) elements.lightboxTitle.textContent = title || '';
+  if (elements.lightboxDescription) elements.lightboxDescription.textContent = description || '';
   
   elements.lightbox.classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -730,8 +844,8 @@ function handleNewsletterForm(e) {
 // Scroll Animations
 function setupAnimations() {
   const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.08,
+    rootMargin: '0px 0px 40px 0px'
   };
   
   const observer = new IntersectionObserver((entries) => {
@@ -743,13 +857,17 @@ function setupAnimations() {
     });
   }, observerOptions);
   
-  // Observe all elements with animation class
-  setTimeout(() => {
-    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  const observeAll = () => {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll:not(.animated)');
     animatedElements.forEach(element => {
       observer.observe(element);
     });
-  }, 500);
+  };
+
+  // Multiple passes to catch both static HTML and dynamic JS rendered cards
+  observeAll();
+  setTimeout(observeAll, 150);
+  setTimeout(observeAll, 600);
 }
 
 // Parallax Effects
@@ -1001,7 +1119,12 @@ window.addEventListener('error', (e) => {
   console.error('Krishna Dairy App Error:', e.error);
 });
 
-// Export for testing (if needed)
+// Export globally for browser & testing
+if (typeof window !== 'undefined') {
+  window.krishnaData = krishnaData;
+  window.appState = appState;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { krishnaData, appState };
 }

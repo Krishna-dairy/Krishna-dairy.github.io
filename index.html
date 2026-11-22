@@ -25,26 +25,38 @@
         <span class="logo__tagline">Pure Artisanal Heritage</span>
       </a>
       
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-      </button>
+      <div class="nav__mobile-actions">
+        <a href="https://wa.me/919316989484" target="_blank" rel="noopener" class="nav__mobile-wa-btn" aria-label="Order on WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" type="button">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </div>
       
       <ul class="nav__menu" id="navMenu">
         <li><a class="nav__link" href="#hero">Home</a></li>
         <li><a class="nav__link" href="#story">Our Story</a></li>
-        <!-- <li><a class="nav__link" href="#why-choose">Why Choose Us</a></li> -->
+        <li><a class="nav__link" href="#why-choose">Why Choose Us</a></li>
         <li><a class="nav__link" href="#products">Products</a></li>
         <li><a class="nav__link" href="#gallery">Gallery</a></li>
         <li><a class="nav__link" href="#testimonials">Reviews</a></li>
         <li><a class="nav__link" href="#contact">Contact</a></li>
+        <li class="nav__menu-cta">
+          <a href="https://wa.me/919316989484" target="_blank" rel="noopener" class="btn btn--whatsapp" style="background:#25D366; color:#fff; border-color:#25D366;">
+            <i class="fab fa-whatsapp"></i>
+            <span>Order on WhatsApp</span>
+          </a>
+        </li>
       </ul>
       
       <div class="nav__actions">
-        <a href="tel:+919316989484" class="btn btn--primary nav__cta">
-          <i class="fas fa-phone"></i>
-          Call Now
+        <a href="https://wa.me/919316989484" target="_blank" rel="noopener" class="btn btn--whatsapp nav__cta" style="background:#25D366; color:#fff; border-color:#25D366;">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp Order</span>
         </a>
       </div>
     </nav>
@@ -52,31 +64,15 @@
 
   <!-- ============== FLOATING CONTACT ============== -->
   <div class="floating-contact">
-    <a href="tel:+919316989484" class="floating-contact__btn" aria-label="Call Krishna Dairy">
-      <i class="fas fa-phone"></i>
+    <a href="https://wa.me/919316989484" class="floating-contact__btn floating-contact__btn--whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
     </a>
-    <div class="floating-contact__tooltip">Call +91 9316989484</div>
   </div>
 
   <!-- ============== HERO SECTION ============== -->
   <section id="hero" class="hero">
-    <div class="hero__background"></div>
-    <div class="hero__overlay"></div>
-    
-    <!-- Organic floating shapes -->
-    <div class="organic-shapes">
-      <div class="organic-shape organic-shape--1"></div>
-      <div class="organic-shape organic-shape--2"></div>
-      <div class="organic-shape organic-shape--3"></div>
-      <div class="organic-shape organic-shape--4"></div>
-    </div>
-    
     <div class="container hero__container">
       <div class="hero__content">
-        <div class="hero__badge">
-          <span class="badge__text">4th Generation Dairy Farmers</span>
-        </div>
-        
         <h1 class="hero__title">
           <span class="hero__title-main">Pure Artisanal Dairy</span>
           <span class="hero__title-sub">Crafted with Heritage</span>
@@ -112,7 +108,7 @@
   <section id="story" class="section section--story">
     <div class="container">
       <div class="story__content">
-        <div class="story__text">
+        <div class="story__text animate-on-scroll">
           <div class="section-badge">
             <span>Our Legacy</span>
           </div>
@@ -153,9 +149,9 @@
           </div>
         </div>
         
-        <div class="story__visual">
+        <div class="story__visual animate-on-scroll delay-2">
           <div class="story__image-container">
-            <img src="https://1.bp.blogspot.com/-LV7_jHvd-g0/WOJa1wx0q_I/AAAAAAAAAh8/hvwCNQVVjt43rX_vPvLgQ-TXbD4g8a0VgCLcB/s1600/Gir%2BCow%2BImages%2B-%2BGir%2BGai%2Bphotos%2B-%2BGir%2BCow%2BHD%2BWallpaper%2B-%2BGIR%2BGAI%2Bpics.jpg" alt="Highland cows in golden hour pasture" class="story__image">
+            <img src="img/gir-cow.jpg" alt="Pure Gir Cow - Krishna Dairy" class="story__image" onerror="this.src='https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
             <div class="image-overlay">
               <div class="overlay-content">
                 <span class="overlay-text">Pure Heritage</span>
@@ -170,7 +166,7 @@
   <!-- ============== WHY CHOOSE US ============== -->
   <section id="why-choose" class="section section--why">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate-on-scroll">
         <div class="section-badge">
           <span>Premium Excellence</span>
         </div>
@@ -187,7 +183,7 @@
   <!-- ============== PRODUCTS SHOWCASE ============== -->
   <section id="products" class="section section--products">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate-on-scroll">
         <div class="section-badge">
           <span>Artisanal Collection</span>
         </div>
@@ -204,7 +200,7 @@
   <!-- ============== GALLERY ============== -->
   <section id="gallery" class="section section--gallery">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate-on-scroll">
         <div class="section-badge">
           <span>Behind the Scenes</span>
         </div>
@@ -222,7 +218,7 @@
   <!-- ============== TESTIMONIALS ============== -->
   <section id="testimonials" class="section section--testimonials">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate-on-scroll">
         <div class="section-badge">
           <span>Customer Stories</span>
         </div>
@@ -241,7 +237,7 @@
   <section id="sustainability" class="section section--sustainability">
     <div class="container">
       <div class="sustainability__content">
-        <div class="sustainability__text">
+        <div class="sustainability__text animate-on-scroll">
           <div class="section-badge">
             <span>Our Commitment</span>
           </div>
@@ -275,7 +271,7 @@
           </div>
         </div>
         
-        <div class="sustainability__visual">
+        <div class="sustainability__visual animate-on-scroll delay-2">
           <div class="sustainability-stats">
             <div class="stat-card">
               <span class="stat-number">0%</span>
@@ -298,7 +294,7 @@
   <!-- ============== CONTACT ============== -->
   <section id="contact" class="section section--contact">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate-on-scroll">
         <div class="section-badge">
           <span>Get In Touch</span>
         </div>
@@ -308,7 +304,7 @@
       
       <div class="contact__wrapper">
         <div class="contact__info">
-          <div class="contact-details">
+          <div class="contact-details animate-on-scroll">
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="fas fa-map-marker-alt"></i>
@@ -320,12 +316,12 @@
             </div>
             
             <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
+              <div class="contact-icon" style="background:#25D366; color:#fff;">
+                <i class="fab fa-whatsapp"></i>
               </div>
               <div class="contact-content">
-                <h4>Call Us Today</h4>
-                <p><a href="tel:+919316989484" class="contact-link">+91 9316989484</a></p>
+                <h4>WhatsApp Support & Orders</h4>
+                <p><a href="https://wa.me/919316989484" target="_blank" rel="noopener" class="contact-link">+91 9316989484 (Chat on WhatsApp)</a></p>
               </div>
             </div>
             
@@ -359,7 +355,7 @@
           </div>
         </div>
         
-        <form class="contact__form" id="contactForm">
+        <form class="contact__form animate-on-scroll delay-2" id="contactForm">
           <h3>Send Us a Message</h3>
           <div class="form-row">
             <div class="form-group">
@@ -457,11 +453,13 @@
           <div class="footer__section">
             <h4 class="footer__title">Our Products</h4>
             <ul class="footer__links">
-              <li><a href="#products">Desi Ghee</a></li>
-              <li><a href="#products">Mawo</a></li>
-              <li><a href="#products">Shrikhand Varieties</a></li>
-              <li><a href="#products">Fresh Butter</a></li>
-              <li><a href="#products">Ghoravu</a></li>
+              <li><a href="product.html?slug=a2-gir-cow-ghee">A2 Gir Cow Ghee</a></li>
+              <li><a href="product.html?slug=desi-ghee">Desi Ghee</a></li>
+              <li><a href="product.html?slug=smooth-khoya-mawa">Smooth Khoya (Mawa)</a></li>
+              <li><a href="product.html?slug=traditional-mawa">Traditional Mawa</a></li>
+              <li><a href="product.html?slug=dry-fruits-shrikhand">Dry Fruits Shrikhand</a></li>
+              <li><a href="product.html?slug=butter">Fresh Butter</a></li>
+              <li><a href="product.html?slug=ghoravu">Ghoravu</a></li>
             </ul>
           </div>
         </div>
@@ -473,13 +471,13 @@
               <span>Aabadash Road, Gundaran, Kalidhar, Talala(gir), Gujarat</span>
             </div>
             <div class="footer__contact-item">
-              <i class="fas fa-phone"></i>
-              <a href="tel:+919316989484">+91 9316989484</a>
+              <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+              <a href="https://wa.me/919316989484" target="_blank" rel="noopener">+91 9316989484 (WhatsApp)</a>
             </div>
-            <div class="footer__contact-item">
+            <!-- <div class="footer__contact-item">
               <i class="fas fa-envelope"></i>
               <a href="mailto:info@krishnadairy.com">info@krishnadairy.com</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -487,7 +485,7 @@
       <div class="footer__bottom">
         <div class="footer__bottom-content">
           <p class="KrishnaR">&copy; 2024  Krishna Dairy. All rights reserved.</p>
-          <!-- <a href="https://nr-revibe.vercel.app/"><p class="footer__tagline">Devlopment By NR_revive</p></a> -->
+          <a href="https://nrrevibe.online"><p class="footer__tagline">powered By NR revive</p></a>
         </div>
       </div>
     </div>
@@ -501,7 +499,10 @@
         <i class="fas fa-times"></i>
       </button>
       <img src="" alt="" class="lightbox__image" id="lightboxImage">
-      <!-- Removed .lightbox__info block -->
+      <div class="lightbox__info" id="lightboxInfo">
+        <h3 class="lightbox__title" id="lightboxTitle"></h3>
+        <p class="lightbox__description" id="lightboxDescription"></p>
+      </div>
     </div>
   </div>
 
